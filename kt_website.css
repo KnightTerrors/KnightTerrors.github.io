@@ -1,0 +1,117 @@
+* { box-sizing: border-box; }
+
+body   { background-color: #fafdff;
+         color: #300b3c;
+		 font-family: Arial, Helvetica, sans-serif;
+		margin: 0; }
+#wrapper { background-color: #fafdff; }		   
+header  { background-color: #b9dde4;
+         color: #300b3c;
+		text-align: center; 
+		padding: .5em; }
+h1    { margin-top: 0; 
+		margin-bottom: 0; 
+		font-family: Georgia, "Times New Roman", serif;
+		letter-spacing: 0.05em; 
+		font-size: 1.8em }
+
+header p { margin-bottom: 0; 
+		font-style: italic; }
+header a:link { text-decoration: none;
+				color: #300b3c; }
+header a:visited { text-decoration: none;
+				  color: #300b3c; }
+header a:hover { color: #0b0849; }
+
+#logo {width: 90px;	
+	   height: auto; }
+nav    { background-color: #fafdff;
+		font-weight:bold;
+		padding: 1em;
+		text-align: center; }
+nav ul { list-style-type: none;
+		margin: 0;
+		padding-left: 0;
+		font-size: 1em; }
+nav li { margin-bottom: 0.5em; }
+nav a { display: block;
+		padding: 0.75em;
+		text-decoration:none; 
+		border: 1px solid #300b3c; }
+nav a:link { color: #300b3c; }
+nav a:visited { color: #300b3c; }
+nav a:hover { background-color: #0e2d0f;
+			color: #fafdff; }
+main a:link { color: #300b3c;
+			text-decoration: none; }
+main a:visited { color: #300b3c;
+				text-decoration: none; }
+main a:hover { color: #0b0849;
+			text-decoration: underline; }
+main	{ display: block; 
+		background-color: #fafdff; 
+		padding: 20px;
+		overflow: auto; }
+h2     { color: #300b3c; 
+		font-family: Georgia, "Times New Roman", serif; 
+		text-shadow: 1px 1px #CCCCCC; }
+section { margin-bottom: 2em; }
+table { border: 2px solid #0e2d0f;
+		border-collapse: collapse;
+		width: 100%; }
+td, th { padding: 0.5em;
+		 border: 2px solid #0e2d0f; }
+th { background-color: #b9dde4;
+	 color: #300b3c; }
+td { text-align: center; }
+.text { text-align: left; }
+tr:nth-of-type(odd) { background-color: #f5fafc; }
+
+iframe { display: block;
+		width: 100%;
+		max-width: 560px;
+		aspect-ratio: 16/9;
+		height: unset;
+		border: none; }
+
+#bookcover { display:block;
+			width: 150px;
+			max-width: 100%;
+			height: auto;
+			margin: 0 auto 1em; }
+
+footer 	{ font-size: 75%;
+		font-style: italic;
+		text-align: center;
+		font-family: Georgia, "Times New Roman", serif;
+		padding: 1em;
+		background-color: #b9dde4; }
+		
+@media (min-width: 600px) {
+	header { display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap:2em; }
+	nav ul { display: flex;
+			 flex-direction: row;
+			 flex-wrap: nowrap;
+			 justify-content: space-around; 
+			 gap: 1em; }
+	nav li { flex:1; 
+			margin-bottom: 0; }
+	#welcome { display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			gap: 2em; }
+	#bookcover { margin: 0;
+				flex-shrink: 0; }
+}
+@media (min-width: 1024px) {
+	#wrapper { margin: auto;
+				width: 80%;
+				border: 1px solid #300b3c;
+				box-shadow: 3px 3px #b9dde4; }
+
+	main { padding: 30px; }
+	#bookcover { width:170px;}
+}
